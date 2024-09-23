@@ -1,81 +1,57 @@
-# Turborepo starter
 
-This is an official starter Turborepo.
+# Cohort Pro
 
-## Using this example
+CohortPro is a comprehensive organization management system for efficient team collaboration, task assignment, and time tracking. It offers real-time progress monitoring, punch in/out functionality, and a centralized dashboard for enhanced productivity.
 
-Run the following command:
 
-```sh
-npx create-turbo@latest
-```
+## 📲 Features
 
-## What's inside?
+- **Team Management:** Create and manage teams with role assignments and track individual progress.
+- **Task Assignment:** Delegate tasks with clear deadlines, priorities, and customizable templates.
+- **Time Tracking:** Utilize punch in/out functionality for accurate tracking of work hours.
+- **Progress Monitoring:** Gain real-time insights into task completion and team performance through a centralized dashboard.
+- **Notifications & Reporting:** Receive automated alerts for deadlines and generate detailed performance reports.
 
-This Turborepo includes the following packages/apps:
 
-### Apps and Packages
+## 🛠️ Installation
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- **Clone the repo:**
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+    ```bash
+    git clone <repo URL>
+    ```
+    ```bash
+    cd <repo-name>
+    ```
 
-### Utilities
+- **Install dependencies:**
 
-This Turborepo has some additional tools already setup for you:
+    ```bash 
+    npm install
+    ```
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- **Running with Docker:**
 
-### Build
+    ```bash
+    cd ./apps
+    ```
+    ```bash
+    docker-compose up -d
 
-To build all apps and packages, run the following command:
+- **Accessing the application:**
 
-```
-cd my-turborepo
-pnpm build
-```
+    - The frontend should be accessible at http://localhost:3001
+    - The backend API can be accessed at http://localhost:3000 (or any other port specified in your Docker configuration).
 
-### Develop
+- **Scripts:**
+    You can use the following command to run application locally without docker
 
-To develop all apps and packages, run the following command:
+    ```bash
+    npm run dev
+    ```
 
-```
-cd my-turborepo
-pnpm dev
-```
+    
+## Support
 
-### Remote Caching
+For support, email rohankumarchaudhary67@gmail.com 
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
